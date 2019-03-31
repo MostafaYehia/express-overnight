@@ -1,0 +1,49 @@
+{
+  "name": "express-overnight",
+  "version": "1.0.0",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start build/app.js --watch",
+    "stop": "pm2 stop app",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://codeative@bitbucket.org/codeative/codeative-website.git"
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "overnight",
+    "decorators",
+    "webpack",
+    "codeative"
+  ],
+  "author": "MostafaYehia",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/codeative/codeative-website#readme",
+  "dependencies": {
+    "@overnightjs/core": "^1.4.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "nodemailer": "^6.0.0",
+    "path": "^0.12.7",
+    "simple-color-print": "^1.0.6"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.2",
+    "@types/express": "^4.16.1",
+    "@types/node": "^11.12.0",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.4000",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
