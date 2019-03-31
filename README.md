@@ -3,15 +3,21 @@ An express app boilerplate using typescript, pm2 as process manager and implemen
 using overnight.js and the final bundle with webpack 
 
 
-# Install
+# Install Dependencies
 npm i
 
-#Run in dev mode to auto re-transpile the app
-npm run dev
+# Development mode
+Run in dev mode to auto re-transpile the app
 
-#After run develop mode, run the application using pm2 to run and reload automatically in another terminal
-npm start
+$ npm run dev
 
-#Stop the application running on pm2 manually
-npm run stop
+# Development mode
+After run develop mode, run the application using pm2
+to run and reload automatically in another terminal
+
+$ npm start
+
+# Stop pm2 app
+
+$ npm run stop
 
